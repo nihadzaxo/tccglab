@@ -132,6 +132,7 @@ h2 {
   border-radius: 8px;
   transition: filter 0.4s ease-in-out;
   object-fit: cover;
+  filter: brightness(1); /* Default: no dimming */
 }
 .team-member-info {
     position: absolute;
@@ -142,13 +143,22 @@ h2 {
     color: #000;
     padding: 10px;
     text-align: center;
-    transform: translateY(100%);
+    transform: translateY(100%); /* Hidden by default */
     transition: transform 0.4s ease-in-out;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
 .member-name { font-weight: bold; font-size: 1rem; margin: 0; }
 .member-degree { font-size: 0.8rem; margin: 5px 0 0 0; color: #111; }
+
+/* Styles applied when team member is visible (scroll into view) */
+.team-member.is-visible .team-member-info {
+    transform: translateY(0); /* Roll on effect */
+}
+.team-member.is-visible img {
+    filter: brightness(0.7); /* Dim image when info is visible */
+}
+
 
 #innovation { text-align: center; margin: 60px 0; }
 
@@ -563,11 +573,7 @@ h2 {
 }
 
 /* --- Responsive Media Queries --- */
-@media (min-width: 769px) {
-    .team-member:hover .team-member-info { transform: translateY(0); }
-    .team-member:hover img { filter: brightness(0.7); }
-}
-
+/* The general .team-member.is-visible rules now handle both desktop and mobile */
 @media (max-width: 768px) {
   header h1 { font-size: 1.8rem; }
   nav { flex-direction: column; gap: 10px; }
@@ -575,9 +581,6 @@ h2 {
   .team-member { width: 250px; height: 250px; }
   .member-name { font-size: 1.1rem; }
   .member-degree { font-size: 0.9rem; }
-  /* Removed is-visible class for animation */
-  .team-member .team-member-info { transform: translateY(0); } /* Ensure info is always visible on mobile */
-  .team-member img { filter: brightness(0.7); } /* Ensure image is always dimmed on mobile */
 
   .innovation-images-container { flex-wrap: nowrap; overflow-x: hidden; justify-content: flex-start; }
   .innovation-image { width: 150px; height: 100px; min-width: unset; }
