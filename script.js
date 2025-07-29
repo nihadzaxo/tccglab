@@ -62,13 +62,14 @@ async function animateInnovationText() {
 }
 
 function setupTeamScrollAnimation() {
-    if (window.innerWidth > 768) return;
+    // Removed the condition to only run on mobile, so it applies to all screen sizes
     const teamMembers = document.querySelectorAll('.team-member');
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
+            // Toggle the 'is-visible' class based on intersection
             entry.target.classList.toggle('is-visible', entry.isIntersecting);
         });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.5 }); // Adjust threshold as needed (e.g., 0.5 means when 50% of element is visible)
     teamMembers.forEach(member => observer.observe(member));
 }
 
@@ -487,7 +488,7 @@ window.onload = () => {
   // Removed runMatrix().then(() => animateInnovationText()); from here
   runMatrix(); // Call runMatrix without the .then() for animateInnovationText
   animateInnovationText(); // Call animateInnovationText directly
-  setupTeamScrollAnimation();
+  setupTeamScrollAnimation(); // Now applies to all screen sizes
   setupGlitchEffect();
   setupInnovationImageScrollEffect();
   autoScrollInnovationImages();
