@@ -197,7 +197,6 @@ function initPdbViewer() {
     scene.add(currentMoleculeGroup);
     composer = new THREE.EffectComposer(renderer);
     composer.addPass(new THREE.RenderPass(scene, camera));
-    composer.addPass(new THREE.UnrealBloomPass(new THREE.Vector2(pdb3dCanvas.clientWidth, pdb3dCanvas.clientHeight), 0.7, 0.3, 0.7));
     window.addEventListener('resize', onWindowResize, false);
     animatePdb();
 }

@@ -14,7 +14,7 @@
     /* General body styling for a clean, scientific aesthetic */
     body {
       background: #0a0a0a; /* Very dark background */
-      color: #e0e0e0; /* Light grey for primary text */
+      color: #ffffff; /* White primary text */
       font-family: 'Inter', sans-serif; /* Professional sans-serif font */
       padding: 2rem;
       display: flex;
@@ -29,7 +29,7 @@
       background: rgba(15, 25, 35, 0.9); /* Darker, slightly blue-tinted background */
       border: 1px solid #00c0ff; /* Scientific blue border */
       border-radius: 12px;
-      box-shadow: 0 0 30px rgba(0, 192, 255, 0.4); /* Blue glow */
+      /* Removed glow */
       padding: 2.5rem;
       max-width: 900px;
       width: 100%;
@@ -42,14 +42,14 @@
       font-family: 'Orbitron', sans-serif; /* Keep Orbitron for headings for a techy feel */
       font-size: 2.8rem;
       font-weight: 700;
-      color: #00f7ff; /* Bright cyan for emphasis */
+      color: #ffffff; /* White headings */
       margin-bottom: 0.5rem;
-      text-shadow: 0 0 15px rgba(0, 247, 255, 0.6);
+      /* Removed glow */
     }
 
     .header-text p {
       font-size: 1.1rem;
-      color: #a0e0ff; /* Lighter blue for descriptive text */
+      color: #ffffff; /* White descriptive text */
       margin-bottom: 1rem; /* Reduced margin for the shortened text */
       line-height: 1.5;
     }
@@ -58,10 +58,10 @@
     #live-time {
       font-family: 'Consolas', 'Monaco', monospace;
       font-size: 0.9rem;
-      color: #00f7ff;
+      color: #ffffff;
       margin-top: 0.5rem;
       display: block;
-      text-shadow: 0 0 5px rgba(0, 247, 255, 0.5);
+      /* Removed glow */
     }
 
     /* Kekule editor container */
@@ -83,7 +83,7 @@
       border-radius: 8px; /* More rounded */
       font-weight: 700; /* Bolder font */
       transition: all 0.3s ease;
-      box-shadow: 0 6px 25px rgba(0, 176, 255, 0.5); /* Stronger shadow */
+      /* Removed glow shadow */
       border: none;
       cursor: pointer;
       text-transform: uppercase;
@@ -93,7 +93,7 @@
 
     button:hover {
       background: linear-gradient(90deg, #007bff, #00b0ff); /* Invert gradient on hover */
-      box-shadow: 0 10px 30px rgba(0, 176, 255, 0.8); /* Even stronger shadow on hover */
+      /* Removed glow shadow */
       transform: translateY(-4px); /* More pronounced lift */
     }
 
@@ -106,11 +106,11 @@
       margin-top: 2rem;
       word-break: break-all;
       text-align: left; /* Align text to the left like a console */
-      box-shadow: inset 0 0 10px rgba(0, 170, 255, 0.2); /* Inner glow */
+      /* Removed inner glow */
     }
 
     #smiles-output {
-      color: #00f7ff; /* Bright cyan for output text */
+      color: #ffffff; /* White output text */
       font-family: 'Consolas', 'Monaco', monospace; /* Monospace font for code */
       font-size: 1rem;
       white-space: pre-wrap; /* Preserve whitespace and wrap text */
@@ -124,7 +124,7 @@
       overflow: hidden;
       margin-top: 2rem;
       height: 30px; /* Height of the loading bar */
-      box-shadow: 0 0 15px rgba(0, 192, 255, 0.3);
+      /* Removed glow */
       position: relative;
       display: none; /* Hidden by default */
       display: flex; /* Use flexbox for cubes */
@@ -144,14 +144,14 @@
 
     .loading-cube.filled {
       background: linear-gradient(45deg, #00c0ff, #007bff); /* Blue gradient for filled cubes */
-      box-shadow: 0 0 8px rgba(0, 192, 255, 0.6); /* Glow for filled cubes */
+      /* Removed glow */
     }
 
     .loading-percentage {
       position: absolute;
       width: 100%;
       text-align: center;
-      color: #e0e0e0; /* Light text for percentage */
+      color: #ffffff; /* White text for percentage */
       font-weight: bold;
       font-family: 'Inter', sans-serif;
       font-size: 1rem;

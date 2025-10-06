@@ -9,7 +9,7 @@ html, body {
   height: 100%;
   background: #000;
   overflow-x: hidden;
-  color: #e0e0e0;
+  color: #ffffff;
   scroll-behavior: smooth;
 }
 body {
@@ -26,7 +26,7 @@ header {
   z-index: 1;
 }
 header h1, header p {
-  color: #00f7ff;
+  color: #ffffff;
   font-size: 2.5rem;
   cursor: default;
 }
@@ -46,13 +46,13 @@ nav {
   z-index: 1;
 }
 nav a {
-  color: #00f7ff;
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
   cursor: pointer;
 }
 nav a:hover {
-  color: #ffffff;
+  color: #dddddd;
 }
 
 /* Styling for the new 2D Sketch button */
@@ -88,7 +88,7 @@ section {
   margin-bottom: 60px;
 }
 h2 {
-  color: #00f7ff;
+  color: #ffffff;
   margin-bottom: 20px;
   cursor: default;
 }
@@ -183,7 +183,7 @@ h2 {
   overflow: hidden;
   flex-shrink: 0;
   /* Removed animation properties */
-  box-shadow: 0 0 10px rgba(0, 247, 255, 0.5), 0 0 20px rgba(0, 247, 255, 0.3);
+  
 }
 /* Removed pulsating-glow animation */
 /* Removed scanline-sweep animation */
@@ -199,18 +199,17 @@ h2 {
 .innovation-image:hover { transform: scale(1.05); }
 
 .matrix-text {
-  color: #00f7ff;
+  color: #ffffff;
   font-size: 1.2rem;
   padding: 20px;
   margin-top: 30px;
   background: rgba(0, 0, 0, 0.3);
   border: 1px solid #00f7ff;
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
   white-space: pre-wrap;
   min-height: 150px;
 }
-.glow { color: #00f7ff; text-shadow: 0 0 5px #00f7ff, 0 0 10px #00f7ff, 0 0 20px #00f7ff; }
+.glow { color: inherit; text-shadow: none; }
 /* Removed matrix-symbol animation */
 
 /* --- Chatbot Icon and Modal Styles --- */
@@ -227,7 +226,7 @@ h2 {
     align-items: center;
     cursor: pointer;
     z-index: 1000;
-    box-shadow: 0 0 20px rgba(0, 247, 255, 0.7), 0 0 10px #00f7ff inset;
+    box-shadow: 0 0 20px rgba(18, 22, 22, 0.7), 0 0 10px #223636 inset;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .chat-icon:hover { transform: scale(1.1); }
@@ -328,7 +327,7 @@ h2 {
 /* --- STYLES FOR MERGED PDB VIEWER (Theme-aligned) --- */
 #pdb-viewer-section {
     font-family: 'Inter', monospace, sans-serif;
-    color: #00f7ff; /* Main theme color */
+    color: #ffffff; /* Main text color */
 }
 #pdb-viewer-section .pdb-container {
     background-color: rgba(0, 50, 50, 0.15); /* Adjusted for cyan theme */
@@ -344,14 +343,13 @@ h2 {
 #pdb-viewer-section h1 {
     font-size: 2rem;
     font-weight: 700;
-    color: #00f7ff;
+    color: #ffffff;
     margin-bottom: 0.8rem;
-    text-shadow: 0 0 8px rgba(0, 247, 255, 0.8);
     letter-spacing: 0.08em;
 }
 #pdb-viewer-section p {
     font-size: 0.95rem;
-    color: #cccccc;
+    color: #ffffff;
     margin-bottom: 1rem;
 }
 #pdb-viewer-section .input-group {
@@ -367,7 +365,7 @@ h2 {
     border: 1px solid #00f7ff;
     border-radius: 0.6rem;
     background-color: rgba(0, 20, 20, 0.8); /* Adjusted for cyan theme */
-    color: #00f7ff;
+    color: #ffffff;
     font-size: 0.9rem;
     flex-grow: 1;
     max-width: 250px;
@@ -387,14 +385,13 @@ h2 {
     letter-spacing: 0.07em;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 0 8px rgba(0, 247, 255, 0.5);
+    
     background-color: rgba(0, 100, 100, 0.5); /* Adjusted for cyan theme */
-    color: #00f7ff;
+    color: #ffffff;
     border: 1px solid #00f7ff;
 }
 #pdb-viewer-section button:hover {
     background-color: rgba(0, 150, 150, 0.7); /* Adjusted for cyan theme */
-    box-shadow: 0 0 20px rgba(0, 247, 255, 0.9);
     transform: translateY(-2px);
 }
 #pdb-viewer-section .render-options, #pdb-viewer-section .color-options, #pdb-viewer-section .info-box {
@@ -416,7 +413,7 @@ h2 {
     align-items: center;
     gap: 0.4rem;
     cursor: pointer;
-    color: #cccccc;
+    color: #ffffff;
     font-weight: 500;
     transition: color 0.2s ease;
 }
@@ -424,7 +421,7 @@ h2 {
     color: #00f7ff;
 }
 #pdb-viewer-section .info-box { padding: 1rem; margin-top: 1rem; font-size: 0.9rem; }
-#pdb-viewer-section .info-box h2 { font-size: 1.1rem; margin-bottom: 0.6rem; text-shadow: 0 0 4px rgba(0, 247, 255, 0.5); }
+#pdb-viewer-section .info-box h2 { font-size: 1.1rem; margin-bottom: 0.6rem; }
 #pdb-viewer-section .info-box p, #pdb-viewer-section .info-box ul { margin-bottom: 0.4rem; }
 #pdb-viewer-section .info-box ul { max-height: 120px; padding: 0.4rem 0.8rem; overflow-y: auto; }
 #pdb-viewer-section .info-box li { padding: 0.15rem 0; }
@@ -440,7 +437,7 @@ h2 {
     display: block;
     background-color: #0a0a0a;
     border-radius: 1rem;
-    box-shadow: 0 0 20px rgba(0, 247, 255, 0.6), inset 0 0 8px rgba(0, 247, 255, 0.3);
+    
     margin-top: 1.5rem;
     border: 1px solid rgba(0, 247, 255, 0.3);
     width: 100%;
@@ -458,7 +455,7 @@ h2 {
     border-top: 6px solid #00f7ff;
     width: 60px; height: 60px;
     margin: 0 auto 1rem auto;
-    box-shadow: 0 0 12px rgba(0, 247, 255, 0.7);
+    box-shadow: 0 0 12px rgba(31, 44, 44, 0.7);
     border-radius: 50%;
     animation: spin 1s linear infinite;
 }
@@ -479,7 +476,7 @@ h2 {
   color: #000;
   padding: 12px 25px;
   border-radius: 30px;
-  box-shadow: 0 0 20px rgba(0, 247, 255, 0.7);
+  box-shadow: 0 0 20px rgba(21, 27, 27, 0.7);
   transition: all 0.3s ease;
   border: none;
   font-size: 1.1rem;
@@ -492,7 +489,7 @@ h2 {
 
 .view-pricing-button:hover {
   background: linear-gradient(45deg, #00e0ff, #00bbff);
-  box-shadow: 0 0 30px rgba(0, 247, 255, 0.9);
+  box-shadow: 0 0 30px rgba(156, 206, 207, 0.9);
   transform: translateY(-3px) scale(1.02);
 }
 
@@ -500,10 +497,10 @@ h2 {
 
 .pricing-table-container {
   background: rgba(0, 0, 0, 0.5);
-  border: 2px solid #00f7ff;
+  border: 2px solid #e3ebf0;
   border-radius: 15px;
   padding: 25px;
-  box-shadow: 0 0 30px rgba(0, 247, 255, 0.6);
+  box-shadow: 0 0 30px rgba(8, 13, 14, 0.6);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   margin-top: 30px;
@@ -528,13 +525,13 @@ h2 {
 
 .pricing-table th, .pricing-table td {
   padding: 15px;
-  border: 1px solid rgba(0, 247, 255, 0.3);
+  border: 1px solid rgba(1, 23, 24, 0.3);
   text-align: left;
   color: #e0e0e0;
 }
 
 .pricing-table th {
-  background-color: rgba(0, 247, 255, 0.2);
+  background-color: rgba(0, 8, 8, 0.2);
   color: #00f7ff;
   font-weight: bold;
   text-transform: uppercase;
@@ -552,7 +549,7 @@ h2 {
 
 .pricing-table tbody tr:hover {
   background-color: rgba(0, 247, 255, 0.1);
-  box-shadow: 0 0 15px rgba(0, 247, 255, 0.4);
+  box-shadow: 0 0 15px rgba(0, 8, 8, 0.4);
 }
 
 /* Removed highlight and pulseHighlight animation */
@@ -564,7 +561,7 @@ h2 {
 }
 
 .pricing-note a {
-  color: #00f7ff;
+  color: #eef3f3;
   text-decoration: none;
 }
 
